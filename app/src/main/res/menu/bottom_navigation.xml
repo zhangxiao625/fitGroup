@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/feed"
+        android:icon="@drawable/ic_baseline_accessibility_new_24"
+        android:title="Feed" />
+
+    <item
+        android:id="@+id/rank"
+        android:icon="@drawable/ic_baseline_track_changes_24"
+        android:title="Rank" />
+
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Settings" />
+
+
+</menu>
