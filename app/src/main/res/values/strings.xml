@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">fitGroup</string>
+    <string name="rank_string">Rank</string>
 </resources>

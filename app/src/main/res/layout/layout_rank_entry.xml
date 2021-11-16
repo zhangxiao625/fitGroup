@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent" >
+
+    <TextView
+
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/tvStreakPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvName"
+        android:layout_marginLeft="40dp"
+        android:text="HomeTown" />
+
+    <TextView
+        android:id="@+id/tvWorkoutPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvStreakPoints"
+        android:layout_marginLeft="40dp"
+        android:text="HomeTown" />
+    <Button
+        android:id="@+id/tvViewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View User"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>
