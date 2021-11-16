@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".CalendarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListExerciseActivity"
+            android:exported="false" />
+        <activity
             android:name=".RankSecondPage"
             android:exported="false" />
         <activity
