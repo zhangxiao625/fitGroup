@@ -52,10 +52,10 @@ public class IntroActivity extends AppCompatActivity {
         btnAnim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.btn_animation);
 
         List<ScreenItem> mList = new ArrayList<>();
-        mList.add(new ScreenItem("Set Goals", "Use FitGroup to accomplish your goals. See your workout board, and select the goal you are going to complete today, and use calendar to track history or future workouts.",R.drawable.img1));
-        mList.add(new ScreenItem("Check in", "aa",R.drawable.background));
-        mList.add(new ScreenItem("Your Group", "aa",R.drawable.img1));
-        mList.add(new ScreenItem("Earn Points", "aa",R.drawable.img1));
+        mList.add(new ScreenItem("Set Goals", "See your workout board and select the goal you are going to complete today. Use calendar to track history or future workouts.",R.drawable.goals));
+        mList.add(new ScreenItem("Check in", "Use check-in under workout panel to keep track of the tasks you've completed as you work to complete your goal.",R.drawable.checkin));
+        mList.add(new ScreenItem("Your Group", "Checkout feeds to get your group's updates, and check out ranking to see your status as compared to your teammates. ",R.drawable.group));
+        mList.add(new ScreenItem("Earn Points", "Be on the lookout for tasks and checkin to earn points! Track your teammates' progress and remind them to workout as you move towards your goals.",R.drawable.trophy));
 
         //setup viewpager
         screenPager = findViewById(R.id.screen_viewpager);
