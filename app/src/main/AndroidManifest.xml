@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".ViewExerciseActivity"
+            android:exported="false" />
+        <activity
             android:name=".RankThirdPage"
             android:exported="false" />
         <activity

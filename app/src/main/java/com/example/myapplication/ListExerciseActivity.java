@@ -4,12 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListExerciseActivity extends AppCompatActivity {
+public class ListExerciseActivity extends AppCompatActivity implements RecyclerViewHolder.ItemClickListener {
 
     List<Exercise> exerciseList = new ArrayList<>();
     RecyclerView.LayoutManager layoutManager;
@@ -24,7 +25,7 @@ public class ListExerciseActivity extends AppCompatActivity {
         initData();
 
         recyclerView = findViewById(R.id.list_exercises);
-        adapter = new RecyclerViewAdapter(exerciseList, getBaseContext());
+        adapter = new RecyclerViewAdapter(exerciseList, getBaseContext(), this);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
@@ -42,5 +43,13 @@ public class ListExerciseActivity extends AppCompatActivity {
         exerciseList.add(new Exercise(R.drawable.warrior_pose, "Warrior Pose I"));
         exerciseList.add(new Exercise(R.drawable.bow_pose, "Bow Pose"));
         exerciseList.add(new Exercise(R.drawable.warrior_pose_2, "Warrior Pose II"));
+    }
+
+    @Override
+    public void onClick(int position) {
+        Intent intent = new Intent(this, ViewExerciseActivity.class);
+        intent.putExtra("image_id", exerciseList.get(position).getImage_id());
+        intent.putExtra("name", exerciseList.get(position).getName());
+        startActivity(intent);
     }
 }

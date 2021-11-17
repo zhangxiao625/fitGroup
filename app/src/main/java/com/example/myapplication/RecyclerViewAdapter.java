@@ -14,10 +14,12 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder
 
     private List<Exercise> exerciseList;
     private Context context;
+    private RecyclerViewHolder.ItemClickListener itemClickListener;
 
-    public RecyclerViewAdapter(List<Exercise> exerciseList, Context context) {
+    public RecyclerViewAdapter(List<Exercise> exerciseList, Context context, RecyclerViewHolder.ItemClickListener itemClickListener) {
         this.exerciseList = exerciseList;
         this.context = context;
+        this.itemClickListener = itemClickListener;
     }
 
     @NonNull
@@ -25,7 +27,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder
     public RecyclerViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View itemView = inflater.inflate(R.layout.item_exercise, parent, false);
-        return new RecyclerViewHolder(itemView);
+        return new RecyclerViewHolder(itemView, itemClickListener);
     }
 
     @Override
