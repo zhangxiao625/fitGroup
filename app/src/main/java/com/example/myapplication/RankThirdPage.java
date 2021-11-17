@@ -19,16 +19,14 @@ import android.widget.Toast;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
-import com.example.myapplication.User;
 
-public class RankActivity extends AppCompatActivity {
+public class RankThirdPage extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rank);
+        setContentView(R.layout.activity_rank_third_page);
 
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setSelectedItemId(R.id.rank);
@@ -58,25 +56,27 @@ public class RankActivity extends AppCompatActivity {
             }
         });
 
-        ArrayList<User> arrayOfUsers = new ArrayList<User>();
-        UsersAdapter adapter = new UsersAdapter(this, arrayOfUsers);
-        ListView listView = (ListView) findViewById(R.id.list_view);
+        ArrayList<RankExerciseEntry> arrayOfUsers = new ArrayList<RankExerciseEntry>();
+        RankThirdPage.RankExerciseAdapter adapter = new RankThirdPage.RankExerciseAdapter(this, arrayOfUsers);
+        ListView listView = (ListView) findViewById(R.id.rank_exercise_list);
         listView.setAdapter(adapter);
 
+        RankExerciseEntry ex1 = new RankExerciseEntry("Back Extension",5,10,160);
+        RankExerciseEntry ex2 = new RankExerciseEntry("Cable Pulldowns",3,8,100);
+        RankExerciseEntry ex3 = new RankExerciseEntry("Bicep Curls",5,15,35);
+        RankExerciseEntry ex4 = new RankExerciseEntry("Hammer Curls",5,15,20);
 
-        for(int i = 0; i < 10; i++){
-
-            User testUser = new User("John",40,30);
-            adapter.add(testUser);
-        }
-
+        adapter.add(ex1);
+        adapter.add(ex2);
+        adapter.add(ex3);
+        adapter.add(ex4);
     }
 
-    public class UsersAdapter extends ArrayAdapter<User> {
+    public class RankExerciseAdapter extends ArrayAdapter<RankExerciseEntry> {
 
-        public UsersAdapter(Context context, ArrayList<User> users) {
+        public RankExerciseAdapter(Context context, ArrayList<RankExerciseEntry> rankExerciseEntries) {
 
-            super(context, 0, users);
+            super(context, 0, rankExerciseEntries);
 
         }
 
@@ -84,50 +84,30 @@ public class RankActivity extends AppCompatActivity {
         public View getView(int position, View convertView, ViewGroup parent) {
 
             // Get the data item for this position
-            User user = getItem(position);
+            RankExerciseEntry rankExercise = getItem(position);
 
             // Check if an existing view is being reused, otherwise inflate the view
             if (convertView == null) {
-                convertView = LayoutInflater.from(getContext()).inflate(R.layout.layout_rank_entry, parent, false);
+                convertView = LayoutInflater.from(getContext()).inflate(R.layout.layout_rank_exercise_entry, parent, false);
             }
 
             // Lookup view for data population
-            TextView tvName = (TextView) convertView.findViewById(R.id.tvName);
-            TextView tvStreak = (TextView) convertView.findViewById(R.id.tvStreakPoints);
-            TextView tvWorkout = (TextView) convertView.findViewById(R.id.tvWorkoutPoints);
-            Button tvViewUser = (Button) convertView.findViewById(R.id.tvViewUser);
+            TextView exerciseName = (TextView) convertView.findViewById(R.id.exercise_name);
+            TextView sets = (TextView) convertView.findViewById(R.id.sets);
+            TextView reps = (TextView) convertView.findViewById(R.id.reps);
+            TextView weight = (TextView) convertView.findViewById(R.id.weight);
 
             // Populate the data into the template view using the data object
-            tvName.setText(user.name);
-            tvStreak.setText(Integer.toString(user.streak_points));
-            tvWorkout.setText(Integer.toString(user.workout_points));
-
-            tvViewUser.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Toast.makeText(getContext(), "Button was clicked for list item " + user.name, Toast.LENGTH_SHORT).show();
-                    String name = user.name;
-                    int streakPoints = user.streak_points;
-                    int workoutPoints = user.workout_points;
-                    openUserEntry(name, streakPoints, workoutPoints );
-                }
-            });
+            exerciseName.setText(rankExercise.exercise);
+            sets.setText("Sets " + Integer.toString(rankExercise.sets));
+            reps.setText("Reps " + Integer.toString(rankExercise.reps));
+            weight.setText("Weight " + Integer.toString(rankExercise.weight));
 
             // Return the completed view to render on screen
             return convertView;
         }
 
-        // pass data from RankActivity -> RankSecondPage
-        public void openUserEntry(String name, int streakPoints, int workoutPoints){
-            Intent intent = new Intent(getApplicationContext(), RankSecondPage.class);
-            intent.putExtra("EXTRA_name", name);
-            intent.putExtra("EXTRA_streakPoints", streakPoints);
-            intent.putExtra("EXTRA_workoutPoints", workoutPoints);
-
-            startActivity(intent);
-        }
     }
 
 
 }
-
