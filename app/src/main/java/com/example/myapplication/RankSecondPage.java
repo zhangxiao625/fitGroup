@@ -62,15 +62,21 @@ public class RankSecondPage extends AppCompatActivity {
                 return false;
             }
         });
+
+        //calendar functions
         CalendarView calendarView=(CalendarView) findViewById(R.id.calendarView1);
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
-
             @Override
             public void onSelectedDayChange(CalendarView view, int year, int month, int dayOfMonth) {
-                Toast.makeText(getApplicationContext(), "" + dayOfMonth, Toast.LENGTH_SHORT).show();// TODO Auto-generated method stub
+                Intent intent = new Intent(getApplicationContext(), RankThirdPage.class);
+                intent.putExtra("EXTRA_year", year);
+                intent.putExtra("EXTRA_month", month);
+                intent.putExtra("EXTRA_day", dayOfMonth);
+                startActivity(intent);
             }
         });
 
+        // get workout / streak points passed from rank scoreboard page
         Intent intent = getIntent();
         String name = intent.getStringExtra("EXTRA_name");
         int streakPoints = intent.getIntExtra("EXTRA_streakPoints", 0);

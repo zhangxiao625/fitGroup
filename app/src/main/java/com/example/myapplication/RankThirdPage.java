@@ -70,6 +70,16 @@ public class RankThirdPage extends AppCompatActivity {
         adapter.add(ex2);
         adapter.add(ex3);
         adapter.add(ex4);
+
+
+        // get calendar
+        Intent intent = getIntent();
+        int year = intent.getIntExtra("EXTRA_year",0);
+        int month = intent.getIntExtra("EXTRA_month", 0);
+        int day = intent.getIntExtra("EXTRA_day", 0);
+
+        TextView tvDate = (TextView)findViewById(R.id.date_value);
+        tvDate.setText(Integer.toString(month) + "/" + Integer.toString(day) + "/" + Integer.toString(year));
     }
 
     public class RankExerciseAdapter extends ArrayAdapter<RankExerciseEntry> {
