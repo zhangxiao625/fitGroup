@@ -76,22 +76,7 @@ public class RankSecondPage extends AppCompatActivity {
         int streakPoints = intent.getIntExtra("EXTRA_streakPoints", 0);
         int workoutPoints = intent.getIntExtra("EXTRA_workoutPoints", 0);
 
-        TextView textView1 = (TextView) findViewById(R.id.textview1);
-        TextView textView2 = (TextView) findViewById(R.id.textview2);
 
-        textView1.setText(name);
-        textView2.setText("" + streakPoints);
-
-
-        // button to go to third page
-        thirdPage = findViewById(R.id.thirdPageButton);
-        thirdPage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), RankThirdPage.class);
-                startActivity(intent);
-            }
-        });
         //pie chart
         PieChart pieChart;
         pieChart = findViewById(R.id.piechart);
@@ -100,11 +85,11 @@ public class RankSecondPage extends AppCompatActivity {
                 new PieModel(
                         "Streak",
                         streakPoints,
-                        Color.parseColor("#FFA726")));
+                        Color.parseColor("#FFEB3B")));
         pieChart.addPieSlice(
                 new PieModel(
                         "Workout",
                         workoutPoints,
-                        Color.parseColor("#66BB6A")));
+                        Color.parseColor("#6200EE")));
     };
 }
