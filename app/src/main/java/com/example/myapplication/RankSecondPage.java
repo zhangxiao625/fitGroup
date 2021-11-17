@@ -4,8 +4,10 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
+
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -13,10 +15,22 @@ import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import android.widget.TextView;
+import android.widget.CalendarView;
+import android.widget.Toast;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import org.eazegraph.lib.charts.PieChart;
+import org.eazegraph.lib.models.PieModel;
+
+
 public class RankSecondPage extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
+
     Button thirdPage;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +62,15 @@ public class RankSecondPage extends AppCompatActivity {
                 return false;
             }
         });
+        CalendarView calendarView=(CalendarView) findViewById(R.id.calendarView1);
+        calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
+
+            @Override
+            public void onSelectedDayChange(CalendarView view, int year, int month, int dayOfMonth) {
+                Toast.makeText(getApplicationContext(), "" + dayOfMonth, Toast.LENGTH_SHORT).show();// TODO Auto-generated method stub
+            }
+        });
+
         Intent intent = getIntent();
         String name = intent.getStringExtra("EXTRA_name");
         int streakPoints = intent.getIntExtra("EXTRA_streakPoints", 0);
@@ -59,6 +82,7 @@ public class RankSecondPage extends AppCompatActivity {
         textView1.setText(name);
         textView2.setText("" + streakPoints);
 
+
         // button to go to third page
         thirdPage = findViewById(R.id.thirdPageButton);
         thirdPage.setOnClickListener(new View.OnClickListener() {
@@ -68,6 +92,19 @@ public class RankSecondPage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //pie chart
+        PieChart pieChart;
+        pieChart = findViewById(R.id.piechart);
 
-    }
+        pieChart.addPieSlice(
+                new PieModel(
+                        "Streak",
+                        streakPoints,
+                        Color.parseColor("#FFA726")));
+        pieChart.addPieSlice(
+                new PieModel(
+                        "Workout",
+                        workoutPoints,
+                        Color.parseColor("#66BB6A")));
+    };
 }
