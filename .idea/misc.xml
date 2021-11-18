@@ -13,14 +13,20 @@
         <entry key="..\:/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/AndroidStudioProjects/MyApplication/app/src/main/res/layout/layout_screen.xml" value="0.3333333333333333" />
         <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/activity_calendar.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/activity_calendar_second.xml" value="0.28306159420289856" />
         <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/activity_intro.xml" value="0.2957427536231884" />
         <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/activity_list_exercise.xml" value="0.2957427536231884" />
         <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/activity_login.xml" value="0.20572916666666666" />
         <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/activity_rank_second_page.xml" value="0.28306159420289856" />
+        <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/activity_rank_third_page.xml" value="0.28306159420289856" />
+        <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/activity_setting.xml" value="0.14666666666666667" />
         <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/activity_view_exercise.xml" value="0.16666666666666666" />
         <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/calendar_cell.xml" value="0.2957427536231884" />
         <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/item_exercise.xml" value="0.17447916666666666" />
         <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/layout_screen.xml" value="0.2957427536231884" />
+        <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/settings_activity.xml" value="0.276268115942029" />
+        <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/xml/root_preferences.xml" value="0.276268115942029" />
         <entry key="..\:/Users/ssroc/CS465/fitGroup/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.29739583333333336" />
         <entry key="..\:/Users/ssroc/CS465/fitGroup/app/src/main/res/layout/activity_intro.xml" value="0.24583333333333332" />
         <entry key="..\:/Users/ssroc/CS465/fitGroup/app/src/main/res/layout/activity_login.xml" value="0.24583333333333332" />

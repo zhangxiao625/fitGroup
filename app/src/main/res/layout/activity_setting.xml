@@ -6,12 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Setting"
-        android:textSize="50dp"
-        android:layout_centerInParent="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_follow"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:drawableRight="@drawable/ic_baseline_search_24"
+            android:layout_gravity="center"
+            android:text="Follow and Invite Friends"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <FrameLayout
+            android:id="@+id/setting"
+            android:layout_width="match_parent"
+            android:layout_height="480dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Out"
+            android:textSize="15sp"
+            android:textColor="@color/red"
+            android:backgroundTint="@color/white"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"

@@ -45,7 +45,7 @@ public class ViewExerciseActivity extends AppCompatActivity {
 
                         @Override
                         public void onFinish() {
-                            if (!isRunning) {
+                            if (isRunning) {
                                 Toast.makeText(ViewExerciseActivity.this, "Finish!!! +5 points", Toast.LENGTH_SHORT).show();
                                 finish();
                             }
