@@ -91,7 +91,7 @@ public class RankSecondPage extends AppCompatActivity {
                 new PieModel(
                         "Streak",
                         streakPoints,
-                        Color.parseColor("#FFEB3B")));
+                        Color.parseColor("#03DAC5")));
         pieChart.addPieSlice(
                 new PieModel(
                         "Workout",
