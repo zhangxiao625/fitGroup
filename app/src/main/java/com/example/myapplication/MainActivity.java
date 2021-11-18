@@ -73,13 +73,15 @@ public class MainActivity extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.friend_list);
         listView.setAdapter(adapter);
 
-        FriendEntry friend1 = new FriendEntry(R.drawable.easy_pose, "Daddy", 50);
-        FriendEntry friend2 = new FriendEntry(R.drawable.easy_pose, "Daddy", 50);
-        FriendEntry friend3 = new FriendEntry(R.drawable.easy_pose, "Daddy", 50);
-        FriendEntry friend4 = new FriendEntry(R.drawable.easy_pose, "Daddy", 50);
-        FriendEntry friend5 = new FriendEntry(R.drawable.easy_pose, "Daddy", 50);
-        FriendEntry friend6 = new FriendEntry(R.drawable.easy_pose, "Daddy", 50);
-        FriendEntry friend7 = new FriendEntry(R.drawable.easy_pose, "Daddy", 50);
+        FriendEntry friend1 = new FriendEntry(R.drawable.easy_pose, "Shikhar Solanki", 50);
+        FriendEntry friend2 = new FriendEntry(R.drawable.easy_pose, "Max Wo", 45);
+        FriendEntry friend3 = new FriendEntry(R.drawable.easy_pose, "Justin Su", 35);
+        FriendEntry friend4 = new FriendEntry(R.drawable.easy_pose, "Greg Smith", 30);
+        FriendEntry friend5 = new FriendEntry(R.drawable.easy_pose, "Daniel Brown", 30);
+        FriendEntry friend6 = new FriendEntry(R.drawable.easy_pose, "Bob Joe", 25);
+        FriendEntry friend7 = new FriendEntry(R.drawable.easy_pose, "Will Johnson", 20);
+        FriendEntry friend8 = new FriendEntry(R.drawable.easy_pose, "Tim Jones", 15);
+        FriendEntry friend9 = new FriendEntry(R.drawable.easy_pose, "John Doe", 5);
 
 
         adapter.add(friend1);
@@ -89,6 +91,8 @@ public class MainActivity extends AppCompatActivity {
         adapter.add(friend5);
         adapter.add(friend6);
         adapter.add(friend7);
+        adapter.add(friend8);
+        adapter.add(friend9);
 
 
         btn_play.setOnClickListener(new View.OnClickListener() {
@@ -140,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
             CircleImageView profileImage = (CircleImageView) convertView.findViewById(R.id.prof);
             TextView friendName = (TextView) convertView.findViewById(R.id.tvFriendName);
             TextView streak = (TextView) convertView.findViewById(R.id.tvStreak);
-            Button btn_remind = convertView.findViewById(R.id.btn_remind);
+            Button btn_remind = convertView.findViewById(R.id.tvViewUser);
 
             // Populate the data into the template view using the data object
             profileImage.setImageResource(friend.image_id);
