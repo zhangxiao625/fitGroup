@@ -38,14 +38,26 @@
 
                 <ListView
                     android:id="@+id/friend_list"
-                    android:layout_width="302dp"
-                    android:layout_height="505dp"
+                    android:layout_width="340dp"
+                    android:layout_height="399dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="40dp" />
 
 
             </LinearLayout>
         </ScrollView>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="23dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Home"
+            android:textSize="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
