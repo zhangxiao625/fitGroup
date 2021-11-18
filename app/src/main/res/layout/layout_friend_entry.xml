@@ -52,14 +52,16 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/btn_remind"
-                style="@style/Widget.AppCompat.Button"
+                android:id="@+id/tvViewUser"
                 android:layout_width="102dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="0dp"
-                android:text="remind" />
-
+                android:shadowColor="#03DAC5"
+                android:backgroundTint="@color/Java"
+                android:text="Remind"
+                android:textColorHighlight="#FF03DAC5" />
+<!--            android:backgroundTint="@color/Java"-->
 
         </LinearLayout>
 
