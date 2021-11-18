@@ -18,6 +18,7 @@ public class ViewExerciseActivity extends AppCompatActivity {
     TextView timer, title;
     ImageView detail_img;
     Button btn_start;
+    Button btn_add;
 
     boolean isRunning = false;
 
@@ -30,7 +31,15 @@ public class ViewExerciseActivity extends AppCompatActivity {
         title = findViewById(R.id.title);
         detail_img = findViewById(R.id.detail_img);
         btn_start = findViewById(R.id.btn_start);
+        btn_add = (Button) findViewById(R.id.btn_add);
 
+        btn_add.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                ExercisePopUp exercisePopUp = new ExercisePopUp();
+                exercisePopUp.show(getSupportFragmentManager(), "example dialog");
+            }
+        });
         btn_start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

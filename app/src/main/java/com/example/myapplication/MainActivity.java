@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn_play;
     Button btn_calendar, btn_choose_exercise;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         btn_play = findViewById(R.id.btn_play);
         btn_calendar = findViewById(R.id.btn_calendar);
         btn_choose_exercise = findViewById(R.id.btn_choose_exercise);
+
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -113,9 +115,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
     }
 
     public class FriendListAdapter extends ArrayAdapter<FriendEntry> {
@@ -141,12 +140,19 @@ public class MainActivity extends AppCompatActivity {
             CircleImageView profileImage = (CircleImageView) convertView.findViewById(R.id.prof);
             TextView friendName = (TextView) convertView.findViewById(R.id.tvFriendName);
             TextView streak = (TextView) convertView.findViewById(R.id.tvStreak);
-
+            Button btn_remind = convertView.findViewById(R.id.btn_remind);
 
             // Populate the data into the template view using the data object
             profileImage.setImageResource(friend.image_id);
             friendName.setText(friend.name);
             streak.setText(Integer.toString(friend.streak) + " day streak");
+
+            btn_remind.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View v){
+                    Toast.makeText(getApplicationContext(), "You have reminded " + friend.name + " to workout"  , Toast.LENGTH_SHORT).show();
+                }
+            });
 
             // Return the completed view to render on screen
             return convertView;

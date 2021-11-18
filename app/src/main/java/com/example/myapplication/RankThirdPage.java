@@ -56,8 +56,8 @@ public class RankThirdPage extends AppCompatActivity {
             }
         });
 
-        ArrayList<RankExerciseEntry> arrayOfUsers = new ArrayList<RankExerciseEntry>();
-        RankThirdPage.RankExerciseAdapter adapter = new RankThirdPage.RankExerciseAdapter(this, arrayOfUsers);
+        ArrayList<RankExerciseEntry> arrayOfExercises = new ArrayList<RankExerciseEntry>();
+        RankThirdPage.RankExerciseAdapter adapter = new RankThirdPage.RankExerciseAdapter(this, arrayOfExercises);
         ListView listView = (ListView) findViewById(R.id.rank_exercise_list);
         listView.setAdapter(adapter);
 
