@@ -21,6 +21,9 @@ public class CalendarSecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar_second);
 
+
+
+
         ArrayList<RankExerciseEntry> arrayOfUsers = new ArrayList<RankExerciseEntry>();
         CalendarSecondAdapter adapter = new CalendarSecondAdapter(this, arrayOfUsers);
         ListView listView = (ListView) findViewById(R.id.rank_exercise_list);

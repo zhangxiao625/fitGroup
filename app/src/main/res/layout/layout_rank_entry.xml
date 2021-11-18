@@ -17,26 +17,26 @@
         android:id="@+id/tvStreakPoints"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_toRightOf="@id/tvName"
+        android:layout_marginLeft="130dp"
         android:text="HomeTown" />
 
     <TextView
         android:id="@+id/tvWorkoutPoints"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_toRightOf="@id/tvStreakPoints"
+        android:layout_marginLeft="230dp"
+
         android:text="HomeTown" />
 
     <Button
         android:id="@+id/tvViewUser"
-        style="@style/Widget.AppCompat.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
         android:layout_marginRight="7dp"
+        android:backgroundTint="@color/Java"
         android:text="View"
-         />
+        android:textColor="@android:color/white" />
 
 </RelativeLayout>

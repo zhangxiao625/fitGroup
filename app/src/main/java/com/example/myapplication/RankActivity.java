@@ -64,11 +64,24 @@ public class RankActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
 
 
-        for(int i = 0; i < 10; i++){
-
-            User testUser = new User("John",40,30);
-            adapter.add(testUser);
-        }
+        User user1 = new User("Shikhar Solanki",50,70);
+        User user2 = new User("Max Wo",45,60);
+        User user3 = new User("Justin Su",35,55);
+        User user4 = new User("Greg Smith",30,40);
+        User user5 = new User("Daniel Brown",30,35);
+        User user6 = new User("Bob Joe",25,30);
+        User user7 = new User("Will Johnson",20,25);
+        User user8 = new User("Tim Jones",15,20);
+        User user9 = new User("John Doe",5,15);
+        adapter.add(user1);
+        adapter.add(user2);
+        adapter.add(user3);
+        adapter.add(user4);
+        adapter.add(user5);
+        adapter.add(user6);
+        adapter.add(user7);
+        adapter.add(user8);
+        adapter.add(user9);
 
     }
 

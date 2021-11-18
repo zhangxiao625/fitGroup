@@ -18,7 +18,7 @@
         android:layout_marginEnd="150dp"
         android:layout_marginBottom="35dp"
         android:backgroundTint="@color/white"
-        android:fontFamily="@font/aldrich"
+        android:fontFamily="@font/roboto_bold"
         android:text="Points Leaderboard"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/list_view"
@@ -28,21 +28,43 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="321dp"
-        android:layout_height="21dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginEnd="37dp"
-        android:layout_marginBottom="20dp"
-        android:text="Name            Streak       Workout        "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="21dp"
+        android:text="Name"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/list_view"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="21dp"
+        android:text="Streak"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/list_view"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="21dp"
+        android:text="Workout"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/list_view"
+        app:layout_constraintStart_toEndOf="@+id/textView4" />
 
     <ListView
         android:id="@+id/list_view"
-        android:layout_width="324dp"
-        android:layout_height="593dp"
+        android:layout_width="369dp"
+        android:layout_height="612dp"
         android:layout_marginTop="130dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
