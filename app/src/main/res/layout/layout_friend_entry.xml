@@ -52,7 +52,7 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/tvViewUser"
+                android:id="@+id/btn_remind"
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="102dp"
                 android:layout_height="wrap_content"

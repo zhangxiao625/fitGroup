@@ -39,10 +39,9 @@
                 <ListView
                     android:id="@+id/friend_list"
                     android:layout_width="302dp"
-                    android:layout_height="383dp"
+                    android:layout_height="505dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="40dp" />
-
 
 
             </LinearLayout>
