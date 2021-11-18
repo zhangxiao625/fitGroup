@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.friend_list);
         listView.setAdapter(adapter);
 
-        FriendEntry friend1 = new FriendEntry(R.drawable.easy_pose, "Shikhar Solanki", 50);
+        FriendEntry friend1 = new FriendEntry(R.drawable.easy_pose, "Tina Fey", 50);
         FriendEntry friend2 = new FriendEntry(R.drawable.easy_pose, "Max Wo", 45);
         FriendEntry friend3 = new FriendEntry(R.drawable.easy_pose, "Justin Su", 35);
         FriendEntry friend4 = new FriendEntry(R.drawable.easy_pose, "Greg Smith", 30);

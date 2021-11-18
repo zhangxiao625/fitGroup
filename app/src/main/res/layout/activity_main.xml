@@ -23,8 +23,103 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="170dp"
+                                android:fontFamily="@font/roboto_black"
+                                android:text="My Profile"
+                                android:textSize="20sp" />
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/settings"
+                                android:layout_width="28dp"
+                                android:layout_height="39dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:src="@drawable/ic_baseline_settings_24" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/prof_pic"
+                                android:layout_width="77dp"
+                                android:layout_height="90dp"
+                                android:layout_marginLeft="30dp"
+                                android:src="@drawable/boat_pose"
+                                app:civ_border_color="#FF000000"
+                                app:civ_border_width="2dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:gravity="center"
+                                    android:text="Timmy Dunn"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:id="@+id/textView8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="14dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_weight="1"
+                                    android:text="You worked out for 56 days straight! "
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/textView9"
+                                    android:layout_width="144dp"
+                                    android:layout_height="13dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="Weight Goal: 170lb, Age: 21"
+                                    android:textSize="11dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
                 <Button
                     android:id="@+id/btn_play"
@@ -38,8 +133,8 @@
 
                 <ListView
                     android:id="@+id/friend_list"
-                    android:layout_width="340dp"
-                    android:layout_height="399dp"
+                    android:layout_width="302dp"
+                    android:layout_height="311dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="40dp" />
 
@@ -52,7 +147,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
-            android:layout_marginTop="23dp"
+            android:layout_marginTop="15dp"
             android:fontFamily="@font/roboto_bold"
             android:text="Home"
             android:textSize="30dp"

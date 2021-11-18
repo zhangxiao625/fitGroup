@@ -63,8 +63,8 @@ public class RankActivity extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.list_view);
         listView.setAdapter(adapter);
 
-
-        User user1 = new User("Shikhar Solanki",50,70);
+        User user0 = new User("Timmy Dun",60,75);
+        User user1 = new User("Tina Fey",50,70);
         User user2 = new User("Max Wo",45,60);
         User user3 = new User("Justin Su",35,55);
         User user4 = new User("Greg Smith",30,40);
