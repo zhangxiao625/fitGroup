@@ -14,7 +14,6 @@
         <entry key="..\:/AndroidStudioProjects/MyApplication/app/src/main/res/layout/layout_screen.xml" value="0.3333333333333333" />
         <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/activity_calendar.xml" value="0.22" />
         <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/activity_calendar_second.xml" value="0.28306159420289856" />
-        <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/activity_feed.xml" value="0.3333333333333333" />
         <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/activity_intro.xml" value="0.2957427536231884" />
         <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/activity_list_exercise.xml" value="0.2957427536231884" />
         <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/activity_login.xml" value="0.20572916666666666" />
@@ -24,10 +23,8 @@
         <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/activity_setting.xml" value="0.14666666666666667" />
         <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/activity_view_exercise.xml" value="0.16666666666666666" />
         <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/calendar_cell.xml" value="0.2957427536231884" />
-        <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/first.xml" value="0.2694746376811594" />
         <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/item_exercise.xml" value="0.17447916666666666" />
         <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/layout_screen.xml" value="0.2957427536231884" />
-        <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/second.xml" value="0.2694746376811594" />
         <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/layout/settings_activity.xml" value="0.276268115942029" />
         <entry key="..\:/AndroidStudioProjects/fitGroup/app/src/main/res/xml/root_preferences.xml" value="0.276268115942029" />
         <entry key="..\:/Users/ssroc/CS465/fitGroup/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.29739583333333336" />
@@ -38,6 +35,26 @@
         <entry key="..\:/Users/ssroc/CS465/fitGroup/app/src/main/res/layout/activity_rank_second_page.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/ssroc/CS465/fitGroup/app/src/main/res/layout/layout_rank_entry.xml" value="0.234375" />
         <entry key="..\:/Users/ssroc/CS465/fitGroup/app/src/main/res/menu/bottom_navigation.xml" value="0.2984375" />
+        <entry key="app/src/main/res/layout/activity_calendar.xml" value="0.2992194817415782" />
+        <entry key="app/src/main/res/layout/activity_calendar_second.xml" value="0.3088023088023088" />
+        <entry key="app/src/main/res/layout/activity_feed.xml" value="0.21714285714285714" />
+        <entry key="app/src/main/res/layout/activity_intro.xml" value="0.22083333333333333" />
+        <entry key="app/src/main/res/layout/activity_list_exercise.xml" value="0.22083333333333333" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.11875" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_setting.xml" value="0.1390625" />
+        <entry key="app/src/main/res/layout/activity_view_exercise.xml" value="0.1390625" />
+        <entry key="app/src/main/res/layout/calendar_cell.xml" value="0.11145833333333334" />
+        <entry key="app/src/main/res/layout/first.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/item_exercise.xml" value="0.1390625" />
+        <entry key="app/src/main/res/layout/item_progress.xml" value="0.2996089608061888" />
+        <entry key="app/src/main/res/layout/layout_exercise_popup.xml" value="0.1390625" />
+        <entry key="app/src/main/res/layout/layout_friend_entry.xml" value="0.18115942028985507" />
+        <entry key="app/src/main/res/layout/layout_rank_exercise_entry.xml" value="0.11145833333333334" />
+        <entry key="app/src/main/res/layout/layout_screen.xml" value="0.11145833333333334" />
+        <entry key="app/src/main/res/layout/second.xml" value="0.45" />
+        <entry key="app/src/main/res/menu/bottom_navigation.xml" value="0.2833299112941795" />
+        <entry key="app/src/main/res/xml/root_preferences.xml" value="0.11875" />
       </map>
     </option>
   </component>
