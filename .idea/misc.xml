@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.1453125" />
         <entry key="..\:/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/btn_gradient_style.xml" value="0.17685185185185184" />
         <entry key="..\:/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/button_animation.xml" value="0.17685185185185184" />
         <entry key="..\:/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_arrow_forward_24.xml" value="0.1824074074074074" />
@@ -37,14 +38,15 @@
         <entry key="..\:/Users/ssroc/CS465/fitGroup/app/src/main/res/menu/bottom_navigation.xml" value="0.2984375" />
         <entry key="app/src/main/res/layout/activity_calendar.xml" value="0.2992194817415782" />
         <entry key="app/src/main/res/layout/activity_calendar_second.xml" value="0.3088023088023088" />
-        <entry key="app/src/main/res/layout/activity_feed.xml" value="0.21714285714285714" />
+        <entry key="app/src/main/res/layout/activity_feed.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_intro.xml" value="0.22083333333333333" />
         <entry key="app/src/main/res/layout/activity_list_exercise.xml" value="0.22083333333333333" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.11875" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_setting.xml" value="0.1390625" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_setting.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_view_exercise.xml" value="0.1390625" />
         <entry key="app/src/main/res/layout/calendar_cell.xml" value="0.11145833333333334" />
+        <entry key="app/src/main/res/layout/custom_list_item.xml" value="0.1" />
         <entry key="app/src/main/res/layout/first.xml" value="0.375" />
         <entry key="app/src/main/res/layout/item_exercise.xml" value="0.1390625" />
         <entry key="app/src/main/res/layout/item_progress.xml" value="0.2996089608061888" />

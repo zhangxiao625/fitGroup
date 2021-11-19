@@ -1,4 +1,20 @@
 <resources>
+    <string-array name="array_names">
+        <item>Shikhar Solanki</item>
+        <item>Max Wo</item>
+        <item>Justin Su</item>
+        <item>Greg Smith</item>
+        <item>Daniel Brown</item>
+        <item>Bob Joe</item>
+        <item>Will Johnson</item>
+        <item>John Doe</item>
+        <item>Rahul Sampat</item>
+        <item>Tim Jones</item>
+        <item>Xiao Zhang</item>
+        <item>Kshitij Sharma</item>
+        <item>Justin Su</item>
+        <item>Justin Su</item>
+    </string-array>
     <string name="app_name">fitGroup</string>
     <string name="rank_string">Rank</string>
     <string name="back"><![CDATA[<-]]></string>
@@ -19,4 +35,7 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="search_bar">Search Bar</string>
+    <string name="search_for_friends">Search for Friends</string>
+    <string name="sign_out">Sign Out</string>
 </resources>
