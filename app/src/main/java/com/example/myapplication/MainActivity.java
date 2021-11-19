@@ -73,15 +73,15 @@ public class MainActivity extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.friend_list);
         listView.setAdapter(adapter);
 
-        FriendEntry friend1 = new FriendEntry(R.drawable.easy_pose, "Tina Fey", 50);
-        FriendEntry friend2 = new FriendEntry(R.drawable.easy_pose, "Max Wo", 45);
-        FriendEntry friend3 = new FriendEntry(R.drawable.easy_pose, "Justin Su", 35);
-        FriendEntry friend4 = new FriendEntry(R.drawable.easy_pose, "Greg Smith", 30);
-        FriendEntry friend5 = new FriendEntry(R.drawable.easy_pose, "Daniel Brown", 30);
-        FriendEntry friend6 = new FriendEntry(R.drawable.easy_pose, "Bob Joe", 25);
-        FriendEntry friend7 = new FriendEntry(R.drawable.easy_pose, "Will Johnson", 20);
-        FriendEntry friend8 = new FriendEntry(R.drawable.easy_pose, "Tim Jones", 15);
-        FriendEntry friend9 = new FriendEntry(R.drawable.easy_pose, "John Doe", 5);
+        FriendEntry friend1 = new FriendEntry(R.drawable.profile1, "Tina Fey", 50);
+        FriendEntry friend2 = new FriendEntry(R.drawable.profile2, "Max Wo", 45);
+        FriendEntry friend3 = new FriendEntry(R.drawable.profile3, "Justin Su", 35);
+        FriendEntry friend4 = new FriendEntry(R.drawable.profile4, "Greg Smith", 30);
+        FriendEntry friend5 = new FriendEntry(R.drawable.profile5, "Daniel Brown", 30);
+        FriendEntry friend6 = new FriendEntry(R.drawable.profile6, "Bob Joe", 25);
+        FriendEntry friend7 = new FriendEntry(R.drawable.profile7, "Will Johnson", 20);
+        FriendEntry friend8 = new FriendEntry(R.drawable.profile8, "Tim Jones", 15);
+        FriendEntry friend9 = new FriendEntry(R.drawable.profile9, "John Doe", 5);
 
 
         adapter.add(friend1);
