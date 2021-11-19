@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -31,13 +32,14 @@ public class ViewExerciseActivity extends AppCompatActivity {
         title = findViewById(R.id.title);
         detail_img = findViewById(R.id.detail_img);
         btn_start = findViewById(R.id.btn_start);
-        btn_add = (Button) findViewById(R.id.btn_add);
+        btn_add = findViewById(R.id.btn_add);
 
         btn_add.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                ExercisePopUp exercisePopUp = new ExercisePopUp();
-                exercisePopUp.show(getSupportFragmentManager(), "example dialog");
+                //ExercisePopUp exercisePopUp = new ExercisePopUp();
+                //exercisePopUp.show(getSupportFragmentManager(), "example dialog");
+                startActivity(new Intent(getApplicationContext(), PopUp.class));
             }
         });
         btn_start.setOnClickListener(new View.OnClickListener() {
