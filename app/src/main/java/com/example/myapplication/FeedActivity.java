@@ -2,16 +2,27 @@ package com.example.myapplication;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.LinearLayout;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class FeedActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
+
+    RecyclerView mrecyclerView;
+    LinearLayoutManager layoutManager;
+    List<ModelClass>userList;
+    Adapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,5 +56,20 @@ public class FeedActivity extends AppCompatActivity {
                 return false;
             }
         });
+        
+        initData();
+
+        mrecyclerView=findViewById(R.id.RecyclerView);
+        layoutManager = new LinearLayoutManager(this);
+        layoutManager.setOrientation(RecyclerView.VERTICAL);
+        mrecyclerView.setLayoutManager(layoutManager);
+        adapter=new Adapter(userList);
+        mrecyclerView.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
+    }
+
+    private void initData() {
+        userList = new ArrayList<>();
+        userList.add(new ModelClass(R.drawable.profile1,"Baby","How ?","11:55 pm","_______________________________________"));
     }
 }
