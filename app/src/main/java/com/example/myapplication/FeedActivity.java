@@ -70,6 +70,18 @@ public class FeedActivity extends AppCompatActivity {
 
     private void initData() {
         userList = new ArrayList<>();
-        userList.add(new ModelClass(R.drawable.profile1,"Baby","How ?","11:55 pm","_______________________________________"));
+        userList.add(new ModelClass(R.drawable.profile1,"Kine","Completed today's exercise","11:55 am","_______________________________________"));
+        userList.add(new ModelClass(R.drawable.profile2,"Adjk","Completed today's exercise","12:05 pm","_______________________________________"));
+        userList.add(new ModelClass(R.drawable.profile3,"Ethen","Completed today's exercise","12:38 pm","_______________________________________"));
+        userList.add(new ModelClass(R.drawable.profile4,"Zen","Completed today's exercise","1:55 pm","_______________________________________"));
+        userList.add(new ModelClass(R.drawable.profile5,"Ketty","Completed today's exercise","2:22 pm","_______________________________________"));
+        userList.add(new ModelClass(R.drawable.profile6,"Ike","Completed today's exercise","2:46 pm","_______________________________________"));
+        userList.add(new ModelClass(R.drawable.profile7,"Elsa","Completed today's exercise","2:55 pm","_______________________________________"));
+        userList.add(new ModelClass(R.drawable.profile8,"Zal","Completed today's exercise","3:55 pm","_______________________________________"));
+        userList.add(new ModelClass(R.drawable.profile9,"Ekl","Completed today's exercise","11:55 pm","_______________________________________"));
+        userList.add(new ModelClass(R.drawable.profile10,"Kine","Completed today's exercise","11:55 pm","_______________________________________"));
+        userList.add(new ModelClass(R.drawable.profile1,"Kine","Completed today's exercise","11:55 pm","_______________________________________"));
+        userList.add(new ModelClass(R.drawable.profile2,"Kine","Completed today's exercise","11:55 pm","_______________________________________"));
+
     }
 }

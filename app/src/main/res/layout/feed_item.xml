@@ -41,15 +41,16 @@
             android:layout_marginLeft="20dp">
 
         </TextView>
+
         <TextView
-            android:layout_width="140dp"
-            android:layout_height="30dp"
-            android:textSize="15sp"
             android:id="@+id/textview2"
-            android:layout_toRightOf="@id/imageview1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
             android:layout_below="@+id/textview"
             android:layout_marginLeft="20dp"
-            android:text="How are you">
+            android:layout_toRightOf="@id/imageview1"
+            android:text="How are you"
+            android:textSize="15sp">
 
         </TextView>
         <TextView
@@ -63,16 +64,17 @@
             android:layout_height="40dp">
 
         </TextView>
+
         <TextView
+            android:id="@+id/Divider"
             android:layout_width="match_parent"
             android:layout_height="20dp"
-            android:textColor="#CDC7C7"
-            android:id="@+id/Divider"
-            android:layout_marginTop="-5dp"
-            android:layout_marginLeft="20dp"
-            android:layout_toRightOf="@id/imageview1"
             android:layout_below="@id/imageview1"
-            android:text="hello">
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-5dp"
+            android:layout_toRightOf="@id/imageview1"
+            android:text="hello"
+            android:textColor="#CDC7C7">
 
         </TextView>
 
