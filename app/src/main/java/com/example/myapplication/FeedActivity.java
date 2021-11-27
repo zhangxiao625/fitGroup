@@ -15,7 +15,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FeedActivity extends AppCompatActivity {
+public class FeedActivity extends AppCompatActivity implements Adapter.OnNoteListener {
 
     BottomNavigationView bottomNavigationView;
 
@@ -63,7 +63,7 @@ public class FeedActivity extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(RecyclerView.VERTICAL);
         mrecyclerView.setLayoutManager(layoutManager);
-        adapter=new Adapter(userList);
+        adapter=new Adapter(userList, this);
         mrecyclerView.setAdapter(adapter);
         adapter.notifyDataSetChanged();
     }
@@ -83,5 +83,13 @@ public class FeedActivity extends AppCompatActivity {
         userList.add(new ModelClass(R.drawable.profile1,"Kine","Completed today's exercise","11:55 pm","_______________________________________"));
         userList.add(new ModelClass(R.drawable.profile2,"Kine","Completed today's exercise","11:55 pm","_______________________________________"));
 
+    }
+
+    @Override
+    public void onNoteClick(int position) {
+        Intent intent = new Intent(this, FeedDetailActivity.class);
+        intent.putExtra("image", userList.get(position).getImageview());
+        intent.putExtra("name", userList.get(position).getTextview1());
+        startActivity(intent);
     }
 }

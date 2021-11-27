@@ -55,7 +55,7 @@ public class IntroActivity extends AppCompatActivity {
         mList.add(new ScreenItem("Set Goals", "See your workout board and select the goal you are going to complete today. Use calendar to track history or future workouts.",R.drawable.goals));
         mList.add(new ScreenItem("Check in", "Use check-in under workout panel to keep track of the tasks you've completed as you work to complete your goal.",R.drawable.checkin));
         mList.add(new ScreenItem("Your Group", "Checkout feeds to get your group's updates, and check out ranking to see your status as compared to your teammates. ",R.drawable.group));
-        mList.add(new ScreenItem("Earn Points", "Be on the lookout for tasks and checkin to earn points! Track your teammates' progress and remind them to workout as you move towards your goals.",R.drawable.trophy));
+        mList.add(new ScreenItem("Earn Points", "Be on the lookout for tasks and checkin to earn points! Track your teammates' progress and remind them to workout.",R.drawable.trophy));
 
         //setup viewpager
         screenPager = findViewById(R.id.screen_viewpager);
