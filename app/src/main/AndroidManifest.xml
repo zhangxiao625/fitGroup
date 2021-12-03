@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".PopUp"
+            android:name=".FriendActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FeedDetailActivity"
             android:exported="false" />
         <activity
             android:name=".SettingActivity"

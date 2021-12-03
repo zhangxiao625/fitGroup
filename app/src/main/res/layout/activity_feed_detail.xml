@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeedDetailActivity">
+
+    <ImageView
+        android:id="@+id/item_book_img"
+        android:layout_width="101dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="centerCrop"
+        android:transitionName="bookTN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile1" />
+
+    <TextView
+        android:transitionName="name"
+        android:id="@+id/item_book_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="An American Marriage"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/item_book_img"
+        app:layout_constraintTop_toTopOf="@+id/item_book_img" />
+
+    <TextView
+        android:transitionName="authorTN"
+        android:id="@+id/item_book_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:text="10 * 20 push-ups \n 2 * 20 squats: 45lbs \n 2 * 30 lunges \n"
+        app:layout_constraintStart_toEndOf="@+id/item_book_img"
+        app:layout_constraintTop_toBottomOf="@+id/item_book_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="points earned today: 15"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_book_author" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
