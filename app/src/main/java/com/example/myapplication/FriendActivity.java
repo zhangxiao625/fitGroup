@@ -10,7 +10,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FriendActivity extends AppCompatActivity{
+public class FriendActivity extends AppCompatActivity implements FriendAdapter.OnNoteListener {
 
     RecyclerView mrecyclerView;
     LinearLayoutManager layoutManager;
@@ -28,7 +28,7 @@ public class FriendActivity extends AppCompatActivity{
         layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(RecyclerView.VERTICAL);
         mrecyclerView.setLayoutManager(layoutManager);
-        adapter=new FriendAdapter(userList);
+        adapter=new FriendAdapter(userList, this);
         mrecyclerView.setAdapter(adapter);
         adapter.notifyDataSetChanged();
     }
@@ -49,4 +49,8 @@ public class FriendActivity extends AppCompatActivity{
         userList.add(new ModelClass(R.drawable.profile2,"Kine","From your contacts","11:55 pm","_______________________________________"));
     }
 
+    @Override
+    public void onNoteClick(int position) {
+        Toast.makeText(getApplicationContext(), "Friend Request Sent", Toast.LENGTH_SHORT).show();
+    }
 }
