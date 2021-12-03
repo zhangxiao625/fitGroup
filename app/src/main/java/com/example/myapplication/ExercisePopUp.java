@@ -29,8 +29,8 @@ public class ExercisePopUp extends AppCompatDialogFragment {
         editTextWeight = view.findViewById(R.id.edit_weight);
 
 
-        builder.setView(view)
-                .setTitle("Login")
+        builder.setView(view);
+                /*.setTitle("Login")
                 .setNegativeButton("cancel", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
@@ -45,7 +45,7 @@ public class ExercisePopUp extends AppCompatDialogFragment {
                         String weight = editTextWeight.getText().toString();
                         listener.applyTexts(sets, reps,weight);
                     }
-                });
+                });*/
 
         return builder.create();
     }
